@@ -1,0 +1,167 @@
+/* Estilos Generales */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Righteous&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('data:image/jpeg;base64,tu_imagen_base64_aquí');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFD700; /* Dorado llamativo */
+    font-family: 'Righteous', Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: flex-start; /* Alineación desde arriba */
+    justify-content: center;
+    flex-direction: column;
+    text-shadow: 2px 2px 4px #000;
+    padding-top: 20px; /* Añadir espacio desde arriba */
+}
+
+/* Encabezado con Estilo Gangsta */
+h1 {
+    font-family: 'Press Start 2P', cursive; /* Fuente pixelada retro */
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.2rem;
+    margin: 0 20px;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Campo de búsqueda con estilo */
+.busqueda {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%; /* Asegura que el formulario ocupe el ancho disponible */
+    box-sizing: border-box; /* Asegura que el formulario no se desborde */
+    z-index: 1; /* Mantener el formulario visible siempre */
+    position: relative; /* Asegura que se mantenga en su lugar */
+}
+
+.busqueda input[type="text"] {
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #FFD700;
+    background-color: transparent;
+    color: #FFD700;
+    border-radius: 5px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.busqueda button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #FFD700;
+    color: #000;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.busqueda button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #FFD700;
+}
+
+/* Fondo Semi-transparente */
+.contenido {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.9);
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el contenido no se desborde */
+    z-index: 0; /* Asegura que el contenido no tape el formulario */
+    position: relative; /* Asegura que el contenido se acomode bien */
+}
+
+/* Estilos para la información de los raperos */
+#info {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: #FFD700;
+    font-size: 1.1rem;
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para la imagen del rapero */
+#imagenRapero {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.imagen-rapero img {
+    width: 300px;
+    height: auto;
+    border: 5px solid #FFD700;
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+
+.imagen-rapero img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el logo */
+.logo {
+    width: 100px; /* Tamaño del logo */
+    height: 100px;
+    margin-right: 15px; /* Espacio entre el logo y el texto */
+    vertical-align: middle; /* Alineación vertical */
+    border: 3px solid #FFD700; /* Borde dorado */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 5px; /* Espacio dentro del borde */
+}
+
+/* Pie de página */
+.footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #FFD700;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para el botón de regresar */
+#regresar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    display: none; /* Este botón solo aparecerá cuando la información se haya mostrado */
+    transition: background-color 0.3s ease;
+}
+
+#regresar:hover {
+    background-color: #555;
+}
